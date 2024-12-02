@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Individual cards */
+.card {
+    width: 23%;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+/* Images within the cards */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Title in each card */
+.card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Paragraph in each card */
+.card p {
+    padding: 0 10px 10px 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="image1.jpg" alt="The Perfect Sandwich, A Real NYC Classic">
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Let Me Tell You About This Steak">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Once again, some random text to lorem ipsum lorem lorem ipsum praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Cherries, Interrupted">
+            <h2>Cherries, Interrupted</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum. What else?</p>
+        </div>
+        <div class="card">
+            <img src="image4.jpg" alt="Once Again, Robust Wine and Vegetable Pasta">
+            <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
+</body>
+</html>
